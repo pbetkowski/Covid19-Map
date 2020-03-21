@@ -2,37 +2,79 @@ package com.betkowski.demomap.model;
 
 public class Point {
 
-    private Double lon;
-    private Double lat;
-    private String text;
+    private String lon;
+    private String lat;
+    private String country;
+    private String confirmed;
+    private String deaths;
+    private String recovered;
 
-    public Point(Double lat, Double lon, String text) {
-        this.lat = lat;
+    @Override
+    public String toString() {
+        return "Point{" +
+                "lon='" + lon + '\'' +
+                ", lat='" + lat + '\'' +
+                ", country='" + country + '\'' +
+                ", confirmed='" + confirmed + '\'' +
+                ", deaths='" + deaths + '\'' +
+                ", recovered='" + recovered + '\'' +
+                '}';
+    }
+
+    public Point(String lon, String lat, String country, String confirmed, String deaths, String recovered) {
         this.lon = lon;
-        this.text = text;
+        this.lat = lat;
+        this.country = country;
+        this.confirmed = confirmed;
+        this.deaths = deaths;
+        this.recovered = recovered;
     }
 
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public Double getLon() {
+    public String getLon() {
         return lon;
     }
 
-    public void setLon(Double lon) {
+    public void setLon(String lon) {
         this.lon = lon;
     }
 
-    public Double getLat() {
+    public String getLat() {
         return lat;
     }
 
-    public void setLat(Double lat) {
+    public void setLat(String lat) {
         this.lat = lat;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getConfirmed() {
+        return confirmed;
+    }
+
+    public void setConfirmed(String confirmed) {
+        this.confirmed = confirmed;
+    }
+
+    public String getDeaths() {
+        return deaths;
+    }
+
+    public void setDeaths(String deaths) {
+        this.deaths = deaths;
+    }
+
+    public String getRecovered() {
+        return recovered;
+    }
+
+    public void setRecovered(String recovered) {
+        this.recovered = recovered;
     }
 }

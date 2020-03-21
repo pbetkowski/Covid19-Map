@@ -6,33 +6,33 @@ import javax.annotation.Generated;
 public class Latest {
 
 
-    private Long mConfirmed;
+    private String mConfirmed;
 
-    private Long mDeaths;
+    private String mDeaths;
 
-    private Long mRecovered;
+    private String mRecovered;
 
-    public Long getConfirmed() {
+    public String getConfirmed() {
         return mConfirmed;
     }
 
-    public void setConfirmed(Long confirmed) {
+    public void setConfirmed(String confirmed) {
         mConfirmed = confirmed;
     }
 
-    public Long getDeaths() {
+    public String getDeaths() {
         return mDeaths;
     }
 
-    public void setDeaths(Long deaths) {
+    public void setDeaths(String deaths) {
         mDeaths = deaths;
     }
 
-    public Long getRecovered() {
+    public String getRecovered() {
         return mRecovered;
     }
 
-    public void setRecovered(Long recovered) {
+    public void setRecovered(String recovered) {
         mRecovered = recovered;
     }
 

@@ -2,7 +2,6 @@
 package com.betkowski.demomap.model;
 
 import java.util.List;
-import javax.annotation.Generated;
 
 public class Location {
 
