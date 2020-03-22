@@ -21,6 +21,7 @@ public class GeoLiteService {
         BufferedReader in = new BufferedReader(new InputStreamReader(
                 externalIp.openStream()));
         String ip = in.readLine();
+        in.close();
         return InetAddress.getByName(ip);
     }
 
