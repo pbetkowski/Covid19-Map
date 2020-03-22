@@ -21,6 +21,12 @@ public class Point {
                 '}';
     }
 
+    public Point(String lon, String lat, String country) {
+        this.lon = lon;
+        this.lat = lat;
+        this.country = country;
+    }
+
     public Point(String lon, String lat, String country, String confirmed, String deaths, String recovered) {
         this.lon = lon;
         this.lat = lat;
